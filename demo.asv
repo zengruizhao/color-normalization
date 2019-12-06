@@ -1,0 +1,7 @@
+clear;clc;close all;
+raw = imread('raw.jpg');
+target = imread('target.jpg');
+subplot(131);imshow(raw);title('Raw');
+subplot(132);imshow(target);title('Raw');
+output=stainnorm_reinhard(raw,target);
+subplot(133);imshow(output);title('Raw');
